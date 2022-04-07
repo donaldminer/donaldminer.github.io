@@ -19,8 +19,7 @@
         var projection = d3.geoStereographic()
         .scale(.75 * height/Math.PI)
         .translate([width/2, height/2])
-        .clipAngle(120)
-        .rotate([rotate.x, -rotate.y]);
+        .clipAngle(120);
 
         var path = d3.geoPath()
             .projection(projection)
