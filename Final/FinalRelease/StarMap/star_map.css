@@ -30,25 +30,10 @@
     fill: none;
     stroke: #555;
     stroke-width: 1px;
-    stroke-opacity: 0.5;
+    stroke-opacity: 0.75;
 }
 
 .cellestial-globe {
-    fill: #060061;
+    fill: #010025;
     pointer-events: none;
-}
-
-.star-black {
-    fill: black;
-}
-
-.star {
-
-}
-
-.star-label {
-    text-transform: uppercase;
-    font-size: 10px;
-    fill: #fff;
-    fill-opacity: 0.6;
 }
