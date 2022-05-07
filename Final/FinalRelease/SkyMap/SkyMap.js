@@ -5,7 +5,7 @@ const svg6 = d3.select("#starMap_area")
     .attr("height", height6)
     .append("g");
 var rotate = {x: 0, y: 45};
-d3.json("stellarObj.json").then(function(data){
+d3.json("https://gist.githubusercontent.com/donaldminer/83ae867158d97d66deb1f819fc64c903/raw/d104eaf47a4d45fc6bc1993c564a941401e75005/skyMap.json").then(function(data){
     
     var projection = d3.geoStereographic()
         .scale(.75 * height6/Math.PI)
