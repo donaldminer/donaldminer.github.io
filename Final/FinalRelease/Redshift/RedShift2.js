@@ -1,18 +1,14 @@
-const margin = {top: 20, right: 20, bottom: 20, left: 20},
-    width = 900,
-    height = 900,
-    radius = Math.min(width, height) / 2 - 80;
-const svg = d3.select("#redShift_area")
+const newsvg = d3.select("#redShift2_area")
     .attr("preserveAspectRatio", "xMinYMin meet")
     .attr("viewBox", "0 0 900 900"),
-    g = svg.append("g")
+    newG = newsvg.append("g")
     .attr("transform", `translate(${width/2}, ${height/2})`);
-g.append("circle")
+newG.append("circle")
     .attr("cx", 0)
     .attr("cy", 0)
     .attr("r", 450)
     .attr("fill", "black");
-d3.csv("https://gist.githubusercontent.com/donaldminer/315e4c5ae0f351bdba702bde6c40ef8a/raw/233b72b177b47f95cbb659ffd7aafaaf0f8fc34f/redshift_info.csv").then(function (data){
+d3.csv("https://gist.githubusercontent.com/donaldminer/ee2606c781ad913412607d489f6a3aa4/raw/93a5d71c99103d55c1c24e9e387566e8542befe9/redshift_info_galaxy.csv").then(function (data){
 
     var r = d3.scaleLinear()
         .domain([
@@ -21,7 +17,7 @@ d3.csv("https://gist.githubusercontent.com/donaldminer/315e4c5ae0f351bdba702bde6
         ])
         .range([0,radius]);
 
-    var gr = g.append("g")
+    var gr = newG.append("g")
         .attr("class", "r axis")
         .selectAll("g")
         .data(r.ticks(7).slice(1))
@@ -42,7 +38,7 @@ d3.csv("https://gist.githubusercontent.com/donaldminer/315e4c5ae0f351bdba702bde6
         .style("text-anchor", "middle")
         .text(function(d) { return d; });
 
-    var ga = g.append("g")
+    var ga = newG.append("g")
         .attr("class", "a axis")
         .selectAll("g")
         .data(d3.range(0, 360, 30))
@@ -74,10 +70,10 @@ d3.csv("https://gist.githubusercontent.com/donaldminer/315e4c5ae0f351bdba702bde6
         .attr("transform", function(d) { return d < 270 && d > 90 ? "rotate(180 " + (radius + 6) + ",0)" : null; })
         .text(function(d) { return d + "°"; });
     const colorScale = d3.scaleOrdinal()
-        .domain(["GALAXY", "QSO"])
+        .domain(d3.map(data, d => d.class))
         .range(d3.schemeSet2);
 
-    var stellarObj = g.selectAll("stellarObj")
+    var stellarObj = newG.selectAll("stellarObj")
         .data(data)
         .join("circle")
         .attr("visibility", "visible")
@@ -95,9 +91,10 @@ d3.csv("https://gist.githubusercontent.com/donaldminer/315e4c5ae0f351bdba702bde6
         .titleWidth(100)
         .shapeWidth(50)
         .orient('Vertical')
+        .cells(10)
         .scale(colorScale);
 
-    g.append("g")
+    newG.append("g")
         .attr("transform", "translate(250,-430)")
         .call(legend);
 
