@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/ec2643e99f.js" crossorigin="anonymous"></script>
+<link href="styles.css" rel="stylesheet" type="text/css"></link>
+<title>Color</title>
+</head>
+
+<body>
+  <div class="dropdown">
+    <i class="fas fa-bars" id="dropBtn"></i>
+    <div class="dropdown-content">
+      <ul>
+        <a href="./home.html">Home</a>
+        <a href="./bandw.html">Black and White</a>
+        <a href="./color.html">Color</a>
+        <a href="./contact.html">Contact</a>
+      </ul>
+    </div>
+  </div>
+  <h1>Color & Slide</h1>
+  <div class="row">
+    <div class="column">
+      <img src="./img/Melancholy Road.jpg" alt="" onclick="expand(this)" id="image">
+      <img src="./img/000222270026.jpg" alt="" onclick="expand(this)" id="image">
+
+      <img src="./img/000258630020.jpg" alt="" onclick="expand(this)" id="image">
+      <img src="./img/img010.jpg" alt="" onclick="expand(this)" id="image">
+      <img src="./img/000222270009.jpg" alt="" onclick="expand(this)" id="image">
+      <img src="./img/000270040019.jpg" alt="" onclick="expand(this)" id="image">
+    </div>
+    <div class="column">
+      <img src="./img/000270040028.jpg" alt="" onclick="expand(this)" id="image">
+      <img src="./img/000270050009.jpg" alt="" onclick="expand(this)" id="image">
+      <img src="./img/000279740009.jpg" alt="" onclick="expand(this)" id="image">
+      <img src="./img/000279740016.jpg" alt="" onclick="expand(this)" id="image">
+      <img src="./img/000279740018.jpg" alt="" onclick="expand(this)" id="image">
+      <img src="./img/000516830013.jpg" alt="" onclick="expand(this)" id="image">
+
+    </div>
+    <div class="column">
+      <img src="./img/000443120003.jpg" alt="" onclick="expand(this)" id="image">
+      <img src="./img/000443120019.jpg" alt="" onclick="expand(this)" id="image">
+      <img src="./img/000409030010.jpg " alt="" onclick="expand(this)" id="image">
+      <img src="./img/000443140016.jpg" alt="" onclick="expand(this)" id="image">
+      <img src="./img/000443140039.jpg" alt="" onclick="expand(this)" id="image">
+      <img src="./img/img008.jpg" alt="" onclick="expand(this)" id="image">
+    </div>
+    <div class="column">
+      <img src="./img/img009.jpg" alt="" onclick="expand(this)" id="image">
+      <img src="./img/View Through the Trees.jpg" alt="" onclick="expand(this)" id="image">
+      <img src="./img/000516830025.jpg" alt="" onclick="expand(this)" id="image">
+      <img src="./img/000341770009.jpg" alt="" onclick="expand(this)" id="image">
+      <img src="./img/000516830026.jpg" alt="" onclick="expand(this)" id="image">
+      <img src="./img/000458270009.jpg" alt="" onclick="expand(this)" id="image">
+    </div>
+  </div>
+  <div class="modal" id="selModal">
+    <i class="fas fa-times" id="close"></i>
+    <img class="modal-content" id="selImg">
+    <div id="caption"></div>
+  </div>
+  <script src="tile.js" ></script>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/ec2643e99f.js" crossorigin="anonymous"></script>
+<link href="styles.css" rel="stylesheet" type="text/css"></link>
+<title>Black and White</title>
+</head>
+
+<body>
+  <div class="dropdown">
+    <i class="fas fa-bars" id="dropBtn"></i>
+    <div class="dropdown-content">
+      <ul>
+        <a href="./home.html">Home</a>
+        <a href="./bandw.html">Black and White</a>
+        <a href="./color.html">Color</a>
+        <a href="./contact.html">Contact</a>
+      </ul>
+    </div>
+  </div>
+  <h1>Black & White</h1>
+
+  <div class="row">
+    <div class="column">
+      <img src="./img/Base of the Sierras.jpg" alt="Base of the Sierras" onclick="expand(this)" id="image">
+      <img src="./img/[HP5 400]028.jpg" alt="Josh's Land" onclick="expand(this)" id="image">
+      <img src="./img/img005.jpg" alt="" onclick="expand(this)" id="image">
+      <img src="./img/[SFX 200]020.jpg" alt="" onclick="expand(this)" id="image">
+      <img src="./img/[HP5 400]002.jpg" alt="" onclick="expand(this)" id="image">
+      <img src="./img/[Ortho80]061.jpg" alt="" onclick="expand(this)" id="image">
+      <img src="./img/[Ortho80]065.jpg" alt="" onclick="expand(this)" id="image">
+      <img src="./img/000303990021.jpg" alt="" onclick="expand(this)" id="image">
+      <img src="./img/[SFX 200]015.jpg" alt="" onclick="expand(this)" id="image">
+      <img src="./img/img001.jpg" alt="" onclick="expand(this)" id="image">
+    </div>
+    <div class="column">
+      <img src="./img/[Delta 400]018.jpg" alt="" onclick="expand(this)" id="image">
+      <img src="./img/-Delta400-004-1.jpg" alt="Down the 5" onclick="expand(this)" id="image">
+      <img src="./img/[Delta 400] (1).jpg" alt="" onclick="expand(this)" id="image">
+      <img src="./img/[Delta 400] (6).jpg" alt="La Guitarra" onclick="expand(this)" id="image">
+      <img src="./img/[Delta400]030.jpg" alt="" onclick="expand(this)" id="image">
+      <img src="./img/[Delta400]033.jpg" alt="" onclick="expand(this)" id="image">
+      <img src="./img/[Ortho80]042.jpg" alt="" onclick="expand(this)" id="image">
+      <img src="./img/000350290015.jpg" alt="" onclick="expand(this)" id="image">
+      <img src="./img/000350300026.jpg" alt="" onclick="expand(this)" id="image">
+      <img src="./img/000350300009.jpg" alt="" onclick="expand(this)" id="image">
+    </div>
+    <div class="column">
+      <img src="./img/[Delta400]001.jpg" alt="" onclick="expand(this)" id="image">
+      <img src="./img/[Delta400]003.jpg" alt="" onclick="expand(this)" id="image">
+      <img src="./img/[Delta400]004.jpg" alt="" onclick="expand(this)" id="image">
+      <img src="./img/[SFX 200]033.jpg" alt="" onclick="expand(this)" id="image">
+      <img src="./img/[Delta 400]017 (2).jpg" alt="" onclick="expand(this)" id="image">
+      <img src="./img/[HP5 400]009.jpg" alt="" onclick="expand(this)" id="image">
+      <img src="./img/[HP5 400]015.jpg" alt="" onclick="expand(this)" id="image">
+      <img src="./img/[HP5 400]018.jpg" alt="" onclick="expand(this)" id="image">
+      <img src="./img/000303990023.jpg" alt="" onclick="expand(this)" id="image">
+    </div>
+    <div class="column">
+      <img src="./img/[Delta400]010.jpg" alt="" onclick="expand(this)" id="image">
+      <img src="./img/[Delta400]011.jpg" alt="" onclick="expand(this)" id="image">
+      <img src="./img/[Delta400]021.jpg" alt="" onclick="expand(this)" id="image">
+      <img src="./img/[HP5 400]006-2.jpg" alt="" onclick="expand(this)" id="image">
+      <img src="./img/[Delta400]026.jpg" alt="" onclick="expand(this)" id="image">
+      <img src="./img/[ORTHO 80]005.jpg" alt="" onclick="expand(this)" id="image">
+      <img src="./img/[ORTHO 80]011.jpg" alt="" onclick="expand(this)" id="image">
+      <img src="./img/[Ortho80]052.jpg" alt="" onclick="expand(this)" id="image">
+      <img src="./img/000350290020.jpg" alt="" onclick="expand(this)" id="image">
+    </div>
+  </div>
+  <div class="modal" id="selModal">
+    <i class="fas fa-times" id="close"></i>
+    <i class="order" id="orderBtn" onclick="newOrder(this)"> Prints</i>
+    <img class="modal-content" id="selImg">
+    <div id="caption"></div>
+  </div>
+  <script src="tile.js" ></script>
+</body>
+
+</html>
