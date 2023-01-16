@@ -82,6 +82,7 @@ h1 {
 /*Gallery*/
 .gallery-container{
   width: 60vw;
+  max-height: fit-content;
   margin: auto;
   overflow: hidden;
   position: relative;
