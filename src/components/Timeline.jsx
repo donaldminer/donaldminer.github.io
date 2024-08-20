@@ -1,4 +1,3 @@
-import React from "react";
 import timeline from "../data/timeline";
 import TimelineItem from "./TimelineItem";
 
