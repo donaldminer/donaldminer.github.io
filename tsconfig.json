@@ -10,6 +10,9 @@
       ],
       "@app/": [
         "src/app/"
+      ],
+      "@data/": [
+        "src/data/"
       ]
     }
   }
