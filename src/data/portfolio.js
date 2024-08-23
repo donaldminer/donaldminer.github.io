@@ -18,10 +18,4 @@ export default [
     stack: ["Lua", "Shell", "ArchLinux"],
     workUrl: "https://github.com/donaldminer/dotfiles",
   },
-  {
-    title: "Workspace Dotfiles",
-    imgUrl: "/Dotfiles.png",
-    stack: ["Lua", "Shell", "ArchLinux"],
-    workUrl: "https://github.com/donaldminer/dotfiles",
-  },
 ];

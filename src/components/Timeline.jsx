@@ -3,7 +3,7 @@ import TimelineItem from "./TimelineItem";
 
 export default function Timeline() {
   return (
-    <div>
+    <div className="col-span-9 row-span-10 bg-black bg-opacity-65">
       {timeline.map((item) => (
         <TimelineItem
           key={item.title}
