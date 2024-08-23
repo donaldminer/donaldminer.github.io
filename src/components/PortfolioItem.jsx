@@ -1,7 +1,7 @@
 export default function PortfolioItem({ imgUrl, stack, title, workUrl }) {
   return (
     <a
-      className="overflow-hidden bg-black bg-opacity-65"
+      className="overflow-hidden bg-black bg-opacity-65 backdrop-blur-sm"
       href={workUrl}
       target="_blank"
     >

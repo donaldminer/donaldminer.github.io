@@ -5,6 +5,7 @@ export default function NavList() {
   const [activePane, setActivePane] = useState();
 
   const items = [
+    { id: 0, text: "Home", pane: <></> },
     { id: 1, text: "About", pane: <About /> },
     { id: 2, text: "Portfolio", pane: <Portfolio /> },
     { id: 3, text: "Timeline", pane: <Timeline /> },
@@ -26,10 +27,8 @@ export default function NavList() {
           </li>
         ))}
       </ul>
-      <section className="col-span-9 row-span-10 grid-cols-6 grid-rows-6">
-        <div className="flex-1 flex-row bg-black bg-opacity-65 backdrop-blur-sm">
-          {activePane}
-        </div>
+      <section className="col-span-9 row-span-10 place-content-center">
+        {activePane}
       </section>
     </>
   );

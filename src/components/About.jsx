@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <div className="text-pretty">
+    <div className="text-pretty bg-black bg-opacity-65 backdrop-blur-sm">
       I have received a Bachelor&apos;s of Science in Computer Science from the
       University of San Francisco in Fall of 2022.
       <br />I am passionate about environmental issues and community based
