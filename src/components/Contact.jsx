@@ -2,7 +2,7 @@ export default function Contact() {
   return (
     <div>
       <form
-        action="https://getform.io/f/(customSlugHere)"
+        action="https://getform.io/f/byvpjmla"
         method="POST"
         className="flex w-full flex-col bg-black bg-opacity-65 p-2 backdrop-blur-sm"
       >
