@@ -26,10 +26,10 @@ export default function Contact() {
           className="mb-4 rounded-md border-2 bg-black bg-opacity-0 p-2 focus:outline-none"
         />
         <button
-          type="button"
+          type="submit"
           className="inline-block w-max place-self-center rounded-md bg-black px-6 py-3 text-center text-base font-medium text-white"
         >
-          Work With Me
+          Send
         </button>
       </form>
     </div>
