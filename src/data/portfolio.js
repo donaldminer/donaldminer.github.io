@@ -3,8 +3,7 @@ export default [
     title: "SDSS Data Visualization",
     imgUrl: "/SDSS.png",
     stack: ["HTML", "CSS", "Javascript", "D3.js"],
-    workUrl:
-      "https://donaldminer.github.io/DataViz/FinalRelease/FinalRelease.html",
+    workUrl: "https://github.com/donaldminer/sdss-visualization/tree/main",
   },
   {
     title: "VR Wayfinding Application",

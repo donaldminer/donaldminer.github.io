@@ -8,7 +8,7 @@ export default function PortfolioItem({ imgUrl, stack, title, workUrl }) {
       <img
         src={imgUrl}
         alt="portfolio"
-        className="sm:h-15 w-full justify-center object-cover md:h-20 lg:h-36"
+        className="h-3/5 w-full justify-center object-cover p-2"
       />
       <div className="w-full p-4">
         <h3 className="text-lg font-medium text-white">{title}</h3>
