@@ -3,7 +3,7 @@ import PortfolioItem from "./PortfolioItem";
 
 export default function Portfolio() {
   return (
-    <div className="grid flex-1 grid-flow-col grid-cols-3 place-content-evenly gap-4 p-2 sm:grid-flow-row sm:grid-cols-1 sm:grid-rows-3 md:grid-cols-2 lg:grid-cols-3">
+    <div className="grid h-full flex-1 grid-flow-col grid-cols-1 grid-rows-4 gap-4 p-2 sm:grid-flow-row sm:grid-cols-2 sm:grid-rows-2">
       {portfolio.map((item) => (
         <PortfolioItem
           key={item.title}
@@ -11,6 +11,7 @@ export default function Portfolio() {
           title={item.title}
           stack={item.stack}
           workUrl={item.workUrl}
+          description={item.description}
         />
       ))}
     </div>

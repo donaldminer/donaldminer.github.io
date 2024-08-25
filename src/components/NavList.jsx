@@ -17,7 +17,7 @@ export default function NavList() {
   };
   return (
     <>
-      <ul className="col-span-3 row-span-11 grid w-fit place-content-center p-2 text-sm font-medium sm:col-span-3">
+      <ul className="col-span-3 row-span-11 grid w-fit place-content-start p-4 text-sm font-medium sm:col-span-2">
         {items.map((item) => (
           <li
             className="cursor-pointer py-1.5 hover:text-black"
