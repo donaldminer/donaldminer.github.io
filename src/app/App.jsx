@@ -2,6 +2,10 @@ import { NavList } from "@components/index.js";
 
 function App() {
   return (
+    /*
+     * TODO: Add breakpoints for mobile and desktop.
+     * Background, Frame, and Grid need to be resized and take search bar into account.
+     */
     <div
       id="Page"
       className="h-screen overflow-hidden bg-mountain bg-cover bg-fixed bg-top bg-no-repeat bg-origin-padding"

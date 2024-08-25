@@ -16,6 +16,11 @@ export default function NavList() {
     setFade(false);
   };
   return (
+    /*
+     * TODO: Adjust the column and row spans for mobile.
+     * Mobile NavList may need to be an accordion or dropdown.
+     * Adjust Padding and Margin for rendered panes.
+     * */
     <>
       <ul className="col-span-3 row-span-11 grid w-fit place-content-start p-4 text-sm font-medium sm:col-span-2">
         {items.map((item) => (
