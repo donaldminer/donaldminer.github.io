@@ -1,13 +1,9 @@
 import timeline from "../data/timeline";
-import TimelineItem from "./TimelineItem";
 
 export default function Timeline() {
-  /* TODO: Scroll should be for mobile only.
-   * Adjust pane sizes for each screen
-   * */
   return (
     <div className="flex h-5/6 justify-center">
-      <div className="w-3/4 appearance-none overflow-y-scroll text-pretty bg-black bg-opacity-65 backdrop-blur-sm">
+      <div className="w-full appearance-none overflow-y-scroll text-pretty bg-black bg-opacity-65 backdrop-blur-sm sm:w-3/4">
         {timeline.map((item) => (
           <TimelineItem
             key={item.title}
@@ -18,6 +14,17 @@ export default function Timeline() {
           />
         ))}
       </div>
+    </div>
+  );
+}
+
+function TimelineItem({ year, title, duration, details }) {
+  return (
+    <div className="text-center">
+      <h1 className="text-xl font-bold text-darkCream">{year}</h1>
+      <h3 className="text-l font-bold">{title}</h3>
+      <div>{duration}</div>
+      <p>{details}</p>
     </div>
   );
 }
