@@ -30,7 +30,7 @@ export default function NavList() {
         ))}
       </ul>
       <section
-        className={`col-span-12 row-span-10 place-content-start px-2 transition-opacity ease-out sm:col-span-9 sm:row-span-10 sm:place-content-center ${fade ? "transition-delay-200 opacity-100 duration-700" : "opacity-0 duration-0"}`}
+        className={`col-span-12 row-span-10 place-content-start px-2 transition-opacity ease-out md:col-span-9 md:row-span-10 md:place-content-center ${fade ? "transition-delay-200 opacity-100 duration-700" : "opacity-0 duration-0"}`}
       >
         {activePane}
       </section>

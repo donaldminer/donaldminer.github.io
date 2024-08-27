@@ -4,11 +4,11 @@ function App() {
   return (
     <div
       id="Page"
-      className="bg-origin-margin h-screen overflow-hidden bg-mountain bg-cover bg-fixed bg-top bg-no-repeat"
+      className="h-dvh w-dvw overflow-hidden bg-lightBlue bg-mountain bg-cover bg-fixed bg-top bg-no-repeat bg-origin-border md:h-screen md:w-screen"
     >
       <div
         id="Frame"
-        className="absolute h-dvh w-dvw self-center overflow-hidden p-4 sm:h-screen sm:w-screen"
+        className="absolute h-dvh w-dvw self-center overflow-hidden p-4 md:h-screen md:w-screen"
       >
         <div className="grid h-full w-full grid-flow-col grid-cols-12 grid-rows-12 self-center border-2 border-white text-white">
           <div
