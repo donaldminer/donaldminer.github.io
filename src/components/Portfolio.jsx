@@ -28,7 +28,7 @@ function PortfolioItem({ imgUrl, stack, title, workUrl, description }) {
       <img
         src={imgUrl}
         alt="portfolio"
-        className="h-full w-full object-cover object-center p-2"
+        className="h-full w-full overflow-hidden object-cover object-center p-2"
       />
       <div className="flex h-full w-full flex-col place-content-between p-4">
         <h3 className="text-start text-lg font-medium text-white sm:text-end">
