@@ -16,16 +16,11 @@ export default function NavList() {
     setFade(false);
   };
   return (
-    /*
-     * TODO: Adjust the column and row spans for mobile.
-     * Mobile NavList may need to be an accordion or dropdown.
-     * Adjust Padding and Margin for rendered panes.
-     * */
     <>
-      <ul className="col-span-3 row-span-11 grid w-fit place-content-start p-4 text-sm font-medium sm:col-span-2">
+      <ul className="col-span-12 grid grid-flow-col place-content-start justify-between px-2 py-0 text-sm font-medium sm:col-span-2 sm:row-span-11 sm:grid-flow-row sm:place-content-start sm:px-4 sm:py-4">
         {items.map((item) => (
           <li
-            className="cursor-pointer py-1.5 hover:text-black"
+            className="cursor-pointer py-0 hover:text-black sm:py-1.5"
             key={item.id}
             onMouseDown={() => handleClick(item.pane)}
             onMouseUp={() => setFade(true)}
@@ -35,7 +30,7 @@ export default function NavList() {
         ))}
       </ul>
       <section
-        className={`col-span-9 row-span-10 place-content-center transition-opacity ease-out ${fade ? "transition-delay-200 opacity-100 duration-700" : "opacity-0 duration-0"}`}
+        className={`col-span-12 row-span-10 place-content-start px-2 transition-opacity ease-out sm:col-span-9 sm:row-span-10 sm:place-content-center ${fade ? "transition-delay-200 opacity-100 duration-700" : "opacity-0 duration-0"}`}
       >
         {activePane}
       </section>
