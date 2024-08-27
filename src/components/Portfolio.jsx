@@ -3,7 +3,7 @@ import portfolio from "../data/portfolio";
 export default function Portfolio() {
   return (
     <div className="h-full snap-y snap-mandatory overflow-scroll scroll-smooth sm:h-full sm:overflow-visible">
-      <div className="grid flex-none touch-auto snap-center snap-always grid-flow-row grid-cols-1 grid-rows-3 gap-4 p-2 sm:grid sm:flex-1 sm:grid-flow-col sm:grid-cols-2 sm:grid-rows-2">
+      <div className="grid flex-none touch-pan-y snap-center snap-always grid-flow-row grid-cols-1 grid-rows-3 gap-4 p-2 sm:grid sm:flex-1 sm:grid-flow-col sm:grid-cols-2 sm:grid-rows-2">
         {portfolio.map((item) => (
           <PortfolioItem
             key={item.title}
@@ -21,7 +21,7 @@ export default function Portfolio() {
 function PortfolioItem({ imgUrl, stack, title, workUrl, description }) {
   return (
     <a
-      className="grid grid-flow-row bg-black bg-opacity-65 backdrop-blur-sm transition-transform duration-700 ease-in-out hover:z-20 hover:scale-125 hover:transform sm:grid-flow-row sm:grid-flow-col sm:grid-cols-2"
+      className="transistion-none grid grid-flow-row grid-rows-2 bg-black bg-opacity-65 backdrop-blur-sm sm:grid-flow-row sm:grid-flow-col sm:grid-cols-2 sm:grid-rows-1 sm:transition-transform sm:duration-700 sm:ease-in-out sm:hover:z-20 sm:hover:scale-125"
       href={workUrl}
       target="_blank"
     >
@@ -30,7 +30,7 @@ function PortfolioItem({ imgUrl, stack, title, workUrl, description }) {
         alt="portfolio"
         className="h-full w-full object-cover object-center p-2"
       />
-      <div className="flex w-full flex-col place-content-between p-4 sm:h-full">
+      <div className="flex h-full w-full flex-col place-content-between p-4">
         <h3 className="text-start text-lg font-medium text-white sm:text-end">
           {title}
         </h3>
