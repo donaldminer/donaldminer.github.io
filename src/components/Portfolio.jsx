@@ -3,7 +3,7 @@ import portfolio from "../data/portfolio";
 export default function Portfolio() {
   return (
     <div className="h-full snap-y snap-mandatory overflow-scroll scroll-smooth md:h-full md:overflow-visible">
-      <div className="grid flex-none touch-pan-y snap-center snap-always grid-flow-row grid-cols-1 grid-rows-3 gap-4 p-2 md:grid md:flex-1 md:grid-flow-col md:grid-cols-2 md:grid-rows-2">
+      <div className="grid flex-none grid-flow-row grid-cols-1 grid-rows-3 gap-4 p-2 md:grid md:flex-1 md:grid-flow-col md:grid-cols-2 md:grid-rows-2">
         {portfolio.map((item) => (
           <PortfolioItem
             key={item.title}
@@ -21,7 +21,7 @@ export default function Portfolio() {
 function PortfolioItem({ imgUrl, stack, title, workUrl, description }) {
   return (
     <a
-      className="transistion-none grid grid-flow-row grid-rows-2 bg-black bg-opacity-65 backdrop-blur-sm md:grid-flow-row md:grid-flow-col md:grid-cols-2 md:grid-rows-1 md:transition-transform md:duration-700 md:ease-in-out md:hover:z-20 md:hover:scale-125"
+      className="transistion-none grid touch-pan-y snap-center snap-always grid-flow-row grid-rows-2 bg-black bg-opacity-65 backdrop-blur-sm md:grid-flow-row md:grid-flow-col md:grid-cols-2 md:grid-rows-1 md:transition-transform md:duration-700 md:ease-in-out md:hover:z-20 md:hover:scale-125"
       href={workUrl}
       target="_blank"
     >
