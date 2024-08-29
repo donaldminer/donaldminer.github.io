@@ -7,7 +7,7 @@ export default function Contact() {
       <form
         action="https://getform.io/f/byvpjmla"
         method="POST"
-        className="flex w-full flex-col bg-black bg-opacity-65 p-2 backdrop-blur-sm"
+        className="flex w-full flex-col bg-black bg-opacity-75 p-2 backdrop-blur-sm"
       >
         <h1 className="place-self-center text-xl font-bold">Contact</h1>
         <input
@@ -25,7 +25,7 @@ export default function Contact() {
         <textarea
           name="message"
           placeholder="Message"
-          rows="10"
+          rows="9"
           className="mb-4 rounded-md border-2 bg-black bg-opacity-0 p-2 focus:outline-none"
         />
         <button

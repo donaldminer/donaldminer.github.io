@@ -3,7 +3,7 @@ import timeline from "../data/timeline";
 export default function Timeline() {
   return (
     <div className="flex h-full justify-center">
-      <div className="w-full appearance-none overflow-y-scroll text-pretty bg-black bg-opacity-65 backdrop-blur-sm">
+      <div className="w-full appearance-none overflow-y-scroll text-pretty bg-black bg-opacity-75 backdrop-blur-sm">
         {timeline.map((item) => (
           <TimelineItem
             key={item.title}

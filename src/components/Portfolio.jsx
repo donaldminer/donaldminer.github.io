@@ -21,7 +21,7 @@ export default function Portfolio() {
 function PortfolioItem({ imgUrl, stack, title, workUrl, description }) {
   return (
     <a
-      className="transistion-none grid h-full touch-pan-y snap-center snap-always grid-flow-row grid-cols-1 grid-rows-2 bg-black bg-opacity-65 backdrop-blur-sm md:h-full md:grid-flow-col md:grid-cols-5 md:grid-rows-1 md:transition-transform md:duration-700 md:ease-in-out md:hover:z-20 md:hover:scale-110"
+      className="transistion-none grid h-full touch-pan-y snap-center snap-always grid-flow-row grid-cols-1 grid-rows-2 bg-black bg-opacity-75 backdrop-blur-sm md:h-full md:grid-flow-col md:grid-cols-5 md:grid-rows-1 md:transition-transform md:duration-700 md:ease-in-out md:hover:z-20 md:hover:scale-110"
       href={workUrl}
       target="_blank"
     >
