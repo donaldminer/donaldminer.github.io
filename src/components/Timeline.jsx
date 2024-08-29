@@ -2,8 +2,8 @@ import timeline from "../data/timeline";
 
 export default function Timeline() {
   return (
-    <div className="flex h-5/6 justify-center">
-      <div className="w-full appearance-none overflow-y-scroll text-pretty bg-black bg-opacity-65 backdrop-blur-sm sm:w-3/4">
+    <div className="flex h-full justify-center">
+      <div className="w-full appearance-none overflow-y-scroll text-pretty bg-black bg-opacity-65 backdrop-blur-sm">
         {timeline.map((item) => (
           <TimelineItem
             key={item.title}
@@ -20,11 +20,11 @@ export default function Timeline() {
 
 function TimelineItem({ year, title, duration, details }) {
   return (
-    <div className="text-center">
-      <h1 className="text-xl font-bold text-darkCream">{year}</h1>
-      <h3 className="text-l font-bold">{title}</h3>
-      <div>{duration}</div>
-      <p>{details}</p>
+    <div className="px-4 text-center font-bold">
+      <h1 className="text-xl text-darkCream">{year}</h1>
+      <h3 className="text-lg text-lightCream">{title}</h3>
+      <div className="text-md font-semibold text-lightCream">{duration}</div>
+      <p className="font-normal">{details}</p>
     </div>
   );
 }
