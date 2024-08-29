@@ -13,7 +13,7 @@ function App() {
         <div className="grid h-full w-full grid-flow-col grid-cols-12 grid-rows-12 self-center border-2 border-white text-white">
           <div
             id="Heading"
-            className="col-span-12 text-nowrap pl-2 pt-1 text-3xl font-semibold sm:pl-4 sm:pt-2"
+            className="col-span-12 text-nowrap pl-2 pt-1 text-4xl font-semibold sm:row-span-2 sm:pl-4 sm:pt-2"
           >
             Rowan Miner
           </div>
