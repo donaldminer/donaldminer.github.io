@@ -11,7 +11,7 @@ export default [
     title: "VR Wayfinding Application",
     imgUrl: "/VR_Wayfinding.png",
     stack: ["Unity", "C#"],
-    workUrl: "https://donaldminer.github.io/Capstone/capstone.html",
+    workUrl: "https://github.com/donaldminer/vr-wayfinding",
     description:
       "A virtual reality wayfinding application for the University of San Francisco Military Science Department",
   },
