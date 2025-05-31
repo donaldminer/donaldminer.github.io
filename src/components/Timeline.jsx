@@ -20,7 +20,7 @@ export default function Timeline() {
 
 function TimelineItem({ year, title, duration, details }) {
   return (
-    <div className="px-4 text-center font-bold">
+    <div className="px-4 py-4 text-left font-bold">
       <h1 className="text-xl text-darkCream">{year}</h1>
       <h3 className="text-lg text-lightCream">{title}</h3>
       <div className="text-md font-semibold text-lightCream">{duration}</div>

@@ -9,7 +9,7 @@ export default [
   {
     year: "2023",
     title: "Volunteer Web Development Support",
-    duration: "2 months",
+    duration: "Present",
     details:
       "Collaborated with staff to create a password-safe calendar page on the Service Board Website. This project began with a meeting to discuss the project scope, deliverables, and timeline. The project was completed on time and available for their team and students to use for the upcoming season.",
   },
